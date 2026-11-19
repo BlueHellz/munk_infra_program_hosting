@@ -1,0 +1,208 @@
+/* PhotoCraft (Photo & Raster) Workspace Styles */
+:root {
+  --sidebar-width: 240px;
+  --tools-width: 52px;
+  --header-height: 38px;
+  --topbar-height: 32px;
+  --status-height: 24px;
+  --bg-dark: #181A1F;
+  --bg-surface: #20232A;
+  --bg-panel: #282C34;
+  --border-color: #333842;
+  --primary-color: #0066FF;
+  --text-main: #E6E8EC;
+  --text-muted: #8F99A8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+}
+
+.photocraft-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Top Menubar */
+.photocraft-menu-bar {
+  display: flex;
+  align-items: center;
+  height: var(--topbar-height);
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 12px;
+  gap: 16px;
+  font-size: 12px;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--text-main);
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--primary-color);
+}
+
+/* Main Workspace */
+.photocraft-workspace {
+  display: flex;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left Tools Palette */
+.photocraft-tools {
+  width: var(--tools-width);
+  background-color: var(--bg-surface);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0;
+  gap: 8px;
+}
+
+.tool-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-main);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.tool-btn:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: var(--border-color);
+}
+
+.tool-btn.active {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 102, 255, 0.4);
+}
+
+/* Canvas Viewport */
+.photocraft-viewport {
+  flex: 1;
+  background-color: #121417;
+  background-image: radial-gradient(#22272E 1px, transparent 1px);
+  background-size: 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: auto;
+}
+
+canvas#main-canvas {
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+}
+
+/* Right Panels */
+.photocraft-panels {
+  width: var(--sidebar-width);
+  background-color: var(--bg-surface);
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-block {
+  border-bottom: 1px solid var(--border-color);
+  padding: 12px;
+}
+
+.panel-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+/* Layers List */
+.layers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.layer-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.layer-item.active {
+  border-color: var(--primary-color);
+  background-color: rgba(0, 102, 255, 0.12);
+}
+
+/* Color Controls */
+.color-picker-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="color"] {
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: none;
+}
+
+/* Bottom Status Bar */
+.photocraft-status-bar {
+  height: var(--status-height);
+  background-color: var(--bg-dark);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.status-left span {
+  margin-right: 12px;
+}

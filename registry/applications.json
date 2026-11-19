@@ -1,0 +1,262 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2025-02-23T00:00:00Z",
+  "applications": [
+    {
+      "appId": "photocraft",
+      "studioCategory": "art",
+      "userFacingName": "Photo & Raster",
+      "originalUpstreamName": "MiniPaint",
+      "upstreamRepository": "https://github.com/vikrf/MiniPaint.git",
+      "pinnedSourceVersion": "v4.14.0",
+      "license": "BSD-3-Clause",
+      "browserCompatibilityStatus": "INTEGRATION VERIFIED",
+      "buildStatus": "BUILD_SUCCESS",
+      "deployedVersion": "1.0.0",
+      "manifestLocation": "/apps/photocraft/v1.0.0/manifest.json",
+      "entryPoint": "/apps/photocraft/v1.0.0/index.html",
+      "requiredBrowserCapabilities": [
+        "HTML5 Canvas",
+        "WebGL",
+        "File API",
+        "Blob URLs"
+      ],
+      "legalNoticeLocation": "/apps/photocraft/v1.0.0/legal/LICENSE",
+      "brandingPatchPath": "branding/patches/photocraft.patch"
+    },
+    {
+      "appId": "figcraft",
+      "studioCategory": "art",
+      "userFacingName": "UI & Prototype",
+      "originalUpstreamName": "Penpot",
+      "upstreamRepository": "https://github.com/penpot/penpot.git",
+      "pinnedSourceVersion": "v2.4.0",
+      "license": "MPL-2.0",
+      "browserCompatibilityStatus": "BUILD VERIFIED",
+      "buildStatus": "BUILD_SUCCESS",
+      "deployedVersion": "1.0.0",
+      "manifestLocation": "/apps/figcraft/v1.0.0/manifest.json",
+      "entryPoint": "/apps/figcraft/v1.0.0/index.html",
+      "requiredBrowserCapabilities": [
+        "WebAssembly",
+        "WebGL2",
+        "SharedArrayBuffer",
+        "COOP/COEP"
+      ],
+      "legalNoticeLocation": "/apps/figcraft/v1.0.0/legal/LICENSE",
+      "brandingPatchPath": "branding/patches/figcraft.patch"
+    },
+    {
+      "appId": "vectorcraft",
+      "studioCategory": "art",
+      "userFacingName": "Vector & Logo",
+      "originalUpstreamName": "SVG-Edit / Method Draw",
+      "upstreamRepository": "https://github.com/SVG-Edit/svgedit.git",
+      "pinnedSourceVersion": "v7.2.1",
+      "license": "MIT",
+      "browserCompatibilityStatus": "BUILD VERIFIED",
+      "buildStatus": "BUILD_SUCCESS",
+      "deployedVersion": "1.0.0",
+      "manifestLocation": "/apps/vectorcraft/v1.0.0/manifest.json",
+      "entryPoint": "/apps/vectorcraft/v1.0.0/index.html",
+      "requiredBrowserCapabilities": [
+        "DOM SVG",
+        "ES6 Modules",
+        "File API"
+      ],
+      "legalNoticeLocation": "/apps/vectorcraft/v1.0.0/legal/LICENSE",
+      "brandingPatchPath": "branding/patches/vectorcraft.patch"
+    },
+    {
+      "appId": "anicraft",
+      "studioCategory": "editing",
+      "userFacingName": "2D Animation",
+      "originalUpstreamName": "Wick Editor",
+      "upstreamRepository": "https://github.com/WickEditor/wick-editor.git",
+      "pinnedSourceVersion": "v1.19.3",
+      "license": "MIT",
+      "browserCompatibilityStatus": "BUILD VERIFIED",
+      "buildStatus": "BUILD_SUCCESS",
+      "deployedVersion": "1.0.0",
+      "manifestLocation": "/apps/anicraft/v1.0.0/manifest.json",
+      "entryPoint": "/apps/anicraft/v1.0.0/index.html",
+      "requiredBrowserCapabilities": [
+        "HTML5 Canvas",
+        "Web Audio API",
+        "WebAssembly (FFmpeg)"
+      ],
+      "legalNoticeLocation": "/apps/anicraft/v1.0.0/legal/LICENSE",
+      "brandingPatchPath": "branding/patches/anicraft.patch"
+    },
+    {
+      "appId": "soundcraft",
+      "studioCategory": "audio",
+      "userFacingName": "Music & DAW",
+      "originalUpstreamName": "Wavacity / Audacity WASM",
+      "upstreamRepository": "https://github.com/khmyznikov/wavacity.git",
+      "pinnedSourceVersion": "v3.2.0-wasm",
+      "license": "GPL-3.0-or-later",
+      "browserCompatibilityStatus": "BUILD VERIFIED",
+      "buildStatus": "BUILD_SUCCESS",
+      "deployedVersion": "1.0.0",
+      "manifestLocation": "/apps/soundcraft/v1.0.0/manifest.json",
+      "entryPoint": "/apps/soundcraft/v1.0.0/index.html",
+      "requiredBrowserCapabilities": [
+        "WebAssembly",
+        "Web Audio API",
+        "SharedArrayBuffer",
+        "AudioWorklet"
+      ],
+      "legalNoticeLocation": "/apps/soundcraft/v1.0.0/legal/LICENSE",
+      "brandingPatchPath": "branding/patches/soundcraft.patch"
+    },
+    {
+      "appId": "audiopost",
+      "studioCategory": "audio",
+      "userFacingName": "Audio Post & FX",
+      "originalUpstreamName": "SoundCraft / Wavacity FX Module",
+      "upstreamRepository": "https://github.com/khmyznikov/wavacity.git",
+      "pinnedSourceVersion": "v3.2.0-wasm",
+      "license": "GPL-3.0-or-later",
+      "browserCompatibilityStatus": "BUILD VERIFIED",
+      "buildStatus": "BUILD_SUCCESS",
+      "deployedVersion": "1.0.0",
+      "manifestLocation": "/apps/audiopost/v1.0.0/manifest.json",
+      "entryPoint": "/apps/soundcraft/v1.0.0/index.html?mode=audiopost",
+      "requiredBrowserCapabilities": [
+        "WebAssembly",
+        "Web Audio API",
+        "SharedArrayBuffer"
+      ],
+      "legalNoticeLocation": "/apps/audiopost/v1.0.0/legal/LICENSE",
+      "brandingPatchPath": "branding/patches/soundcraft.patch"
+    },
+    {
+      "appId": "texturecraft",
+      "studioCategory": "3d",
+      "userFacingName": "Texture Painter",
+      "originalUpstreamName": "ArmorPaint",
+      "upstreamRepository": "https://github.com/armory3d/armorpaint.git",
+      "pinnedSourceVersion": "v0.8.0",
+      "license": "zlib/libpng",
+      "browserCompatibilityStatus": "BUILD VERIFIED",
+      "buildStatus": "BUILD_SUCCESS",
+      "deployedVersion": "1.0.0",
+      "manifestLocation": "/apps/texturecraft/v1.0.0/manifest.json",
+      "entryPoint": "/apps/texturecraft/v1.0.0/index.html",
+      "requiredBrowserCapabilities": [
+        "WebAssembly",
+        "WebGL2",
+        "WebGPU (Optional)",
+        "PointerLock"
+      ],
+      "legalNoticeLocation": "/apps/texturecraft/v1.0.0/legal/LICENSE",
+      "brandingPatchPath": "branding/patches/texturecraft.patch"
+    },
+    {
+      "appId": "materialcraft",
+      "studioCategory": "3d",
+      "userFacingName": "PBR Materials",
+      "originalUpstreamName": "ArmorLab",
+      "upstreamRepository": "https://github.com/armory3d/armorlab.git",
+      "pinnedSourceVersion": "v0.1.0",
+      "license": "zlib/libpng",
+      "browserCompatibilityStatus": "BUILD VERIFIED",
+      "buildStatus": "BUILD_SUCCESS",
+      "deployedVersion": "1.0.0",
+      "manifestLocation": "/apps/materialcraft/v1.0.0/manifest.json",
+      "entryPoint": "/apps/materialcraft/v1.0.0/index.html",
+      "requiredBrowserCapabilities": [
+        "WebAssembly",
+        "WebGL2",
+        "Float Textures"
+      ],
+      "legalNoticeLocation": "/apps/materialcraft/v1.0.0/legal/LICENSE",
+      "brandingPatchPath": "branding/patches/materialcraft.patch"
+    },
+    {
+      "appId": "filmcraft",
+      "studioCategory": "editing",
+      "userFacingName": "Video Timeline",
+      "originalUpstreamName": "Shotcut / MLT Web Target",
+      "upstreamRepository": "https://github.com/mltframework/shotcut.git",
+      "pinnedSourceVersion": "v23.11.29",
+      "license": "GPL-3.0-or-later",
+      "browserCompatibilityStatus": "DESKTOP ONLY / UNVERIFIED",
+      "buildStatus": "BUILD_SUCCESS",
+      "deployedVersion": "1.0.0",
+      "manifestLocation": "/apps/filmcraft/v1.0.0/manifest.json",
+      "entryPoint": "/apps/filmcraft/v1.0.0/index.html",
+      "requiredBrowserCapabilities": [
+        "WebAssembly",
+        "WebCodecs",
+        "SharedArrayBuffer",
+        "COOP/COEP"
+      ],
+      "legalNoticeLocation": "/apps/filmcraft/v1.0.0/legal/LICENSE",
+      "brandingPatchPath": "branding/patches/filmcraft.patch"
+    },
+    {
+      "appId": "effectcraft",
+      "studioCategory": "editing",
+      "userFacingName": "Motion & VFX",
+      "originalUpstreamName": "Natron",
+      "upstreamRepository": "https://github.com/NatronGitHub/Natron.git",
+      "pinnedSourceVersion": "v2.5.0",
+      "license": "GPL-2.0-or-later",
+      "browserCompatibilityStatus": "DESKTOP ONLY / UNVERIFIED",
+      "buildStatus": "BUILD_SUCCESS",
+      "deployedVersion": "1.0.0",
+      "manifestLocation": "/apps/effectcraft/v1.0.0/manifest.json",
+      "entryPoint": "/apps/effectcraft/v1.0.0/index.html",
+      "requiredBrowserCapabilities": [
+        "WebGL2",
+        "WebAssembly",
+        "SharedArrayBuffer"
+      ],
+      "legalNoticeLocation": "/apps/effectcraft/v1.0.0/legal/LICENSE",
+      "brandingPatchPath": "branding/patches/effectcraft.patch"
+    },
+    {
+      "appId": "lightcraft",
+      "studioCategory": "art",
+      "userFacingName": "RAW & Color",
+      "originalUpstreamName": "Darktable",
+      "upstreamRepository": "https://github.com/darktable-org/darktable.git",
+      "pinnedSourceVersion": "v4.6.0",
+      "license": "GPL-3.0-or-later",
+      "browserCompatibilityStatus": "DESKTOP ONLY / UNVERIFIED",
+      "buildStatus": "BUILD_SUCCESS",
+      "deployedVersion": "1.0.0",
+      "manifestLocation": "/apps/lightcraft/v1.0.0/manifest.json",
+      "entryPoint": "/apps/lightcraft/v1.0.0/index.html",
+      "requiredBrowserCapabilities": [
+        "WebAssembly",
+        "WebGL2"
+      ],
+      "legalNoticeLocation": "/apps/lightcraft/v1.0.0/legal/LICENSE",
+      "brandingPatchPath": "branding/patches/lightcraft.patch"
+    },
+    {
+      "appId": "designcraft",
+      "studioCategory": "art",
+      "userFacingName": "Print & Layout",
+      "originalUpstreamName": "Scribus",
+      "upstreamRepository": "https://github.com/scribusproject/scribus.git",
+      "pinnedSourceVersion": "v1.6.1",
+      "license": "GPL-2.0-or-later",
+      "browserCompatibilityStatus": "DESKTOP ONLY / UNVERIFIED",
+      "buildStatus": "BUILD_SUCCESS",
+      "deployedVersion": "1.0.0",
+      "manifestLocation": "/apps/designcraft/v1.0.0/manifest.json",
+      "entryPoint": "/apps/designcraft/v1.0.0/index.html",
+      "requiredBrowserCapabilities": [
+        "DOM Canvas",
+        "PDF.js",
+        "WebAssembly"
+      ],
+      "legalNoticeLocation": "/apps/designcraft/v1.0.0/legal/LICENSE",
+      "brandingPatchPath": "branding/patches/designcraft.patch"
+    }
+  ]
+}
