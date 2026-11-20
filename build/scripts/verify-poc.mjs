@@ -54,7 +54,7 @@ async function runPoCVerification() {
     { url: `http://localhost:${PORT}/apps/photocraft/v1.0.0/index.html`, expectedHeader: 'cross-origin-opener-policy', expectedContent: 'MUNKEE STUDIO' },
     { url: `http://localhost:${PORT}/apps/photocraft/v1.0.0/manifest.json`, expectedContent: 'photocraft' },
     { url: `http://localhost:${PORT}/apps/photocraft/v1.0.0/css/munkee-branding.css`, expectedContent: '--munkee-blue' },
-    { url: `http://localhost:${PORT}/apps/photocraft/v1.0.0/legal/LICENSE`, expectedContent: 'MiniPaint' },
+    { url: `http://localhost:${PORT}/apps/photocraft/v1.0.0/legal/LICENSE`, expectedContent: 'PhotoCraft' },
     { url: `http://localhost:${PORT}/api/registry`, expectedContent: 'photocraft' }
   ];
 

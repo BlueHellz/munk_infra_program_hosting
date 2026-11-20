@@ -70,6 +70,31 @@ body {
   border: 1px solid rgba(0, 102, 255, 0.4);
 }
 
+.munkee-studio-header-bar .window-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.munkee-studio-header-bar .window-btn {
+  font-size: 12px;
+  color: var(--munkee-text-muted);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+  transition: all 0.15s ease;
+}
+
+.munkee-studio-header-bar .window-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--munkee-text);
+}
+
+.munkee-studio-header-bar .window-btn.close:hover {
+  background: #E53935;
+  color: #FFFFFF;
+}
+
 /* Primary Button Highlighting */
 button.primary, .btn-primary, input[type="button"].primary {
   background-color: var(--munkee-blue) !important;
